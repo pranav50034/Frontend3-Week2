@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="./style.css" />
+   </head>
+   <body>
+      <div class="current">
+         <h1>TimeZone API</h1>
+         <h1>Your Current Time Zone</h1>
+         <div class="current-tz">
+            <p>Name Of Time Zone:&nbsp;<span class="tz"></span></p>
+            <div class="lat-long">
+               <p>Lat:&nbsp;<span class="lat"></span></p>
+               <p>Long:&nbsp;<span class="long"></span></p>
+            </div>
+            <p>Offset STD:&nbsp;<span class="std"></span></p>
+            <p>Offset STD Seconds:&nbsp;<span class="std-sec"></span></p>
+            <p>Offset DST:&nbsp;<span class="dst"></span></p>
+            <p>Offset DST Seconds:&nbsp;<span class="dst-sec"></span></p>
+            <p>Country:&nbsp;<span class="country"></span></p>
+            <p>Postcode:&nbsp;<span class="postcode"></span></p>
+            <p>City:&nbsp;<span class="city"></span></p>
+         </div>
+      </div>
+
+      <div class="search-tz">
+         <h1>Enter Address</h1>
+         <input class="search" placeholder="Address" type="text" />
+         <button class="search-btn">Search</button>
+         <h1>Your Result</h1>
+         <div class="current-tz search-division">
+            <p>Name Of Time Zone:&nbsp;<span id="search-tz"></span></p>
+            <div class="lat-long">
+               <p>Lat:&nbsp;<span id="search-lat"></span></p>
+               <p>Long:&nbsp;<span id="search-long"></span></p>
+            </div>
+            <p>Offset STD:&nbsp;<span id="search-std"></span></p>
+            <p>Offset STD Seconds:&nbsp;<span id="search-std-sec"></span></p>
+            <p>Offset DST:&nbsp;<span id="search-dst"></span></p>
+            <p>Offset DST Seconds:&nbsp;<span id="search-dst-sec"></span></p>
+            <p>Country:&nbsp;<span id="search-country"></span></p>
+            <p>Postcode:&nbsp;<span id="search-postcode"></span></p>
+            <p>City:&nbsp;<span id="search-city"></span></p>
+         </div>
+         <h4 class="head">Please enter a valid address!</h4>
+      </div>
+
+      <script src="./script.js"></script>
+   </body>
+</html>
